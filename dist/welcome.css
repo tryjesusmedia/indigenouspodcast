@@ -1,0 +1,44 @@
+.welcome-page{font-size:1.375rem;line-height:1.6;min-height:100vh;display:flex;flex-direction:column}
+.welcome-main{width:min(60rem,calc(100% - 5rem));margin-inline:auto;padding:3.5rem 0 4rem;flex:1}
+.welcome-intro{max-width:48rem;margin-bottom:2rem}
+.welcome-intro .eyebrow{font-size:.9375rem;letter-spacing:.08em;margin-bottom:1rem}
+.welcome-intro h1{font-size:clamp(2.25rem,4.5vw,3.4rem);margin-bottom:1.1rem}
+.welcome-intro p:last-child{margin-bottom:0;max-width:44rem}
+.welcome-start{background:var(--paper);border:1px solid var(--line);border-top:4px solid var(--gold);border-radius:4px 4px 12px 12px;padding:2rem;display:grid;grid-template-columns:1fr auto;align-items:center;gap:2rem}
+.welcome-start .small-label{font-size:.9375rem;letter-spacing:.06em;margin-bottom:.7rem}
+.welcome-start h2{font-size:clamp(1.6rem,3vw,2rem);margin:0;max-width:29rem;line-height:1.35}
+.welcome-start .button{font-size:1.125rem;min-height:56px;gap:.75rem;white-space:normal}
+.welcome-choices{margin-top:1.4rem}
+.welcome-window-button{display:inline-flex;align-items:center;justify-content:center;gap:.8rem;min-height:56px;padding:.9rem 1.25rem;background:var(--paper);border:1px solid var(--navy);border-radius:8px;font-family:var(--heading);font-weight:700;font-size:1.0625rem;line-height:1.45;color:var(--navy);cursor:pointer}
+.welcome-window-button:hover{background:#EAE4D9}
+.welcome-more{margin-top:1rem;max-width:100%}
+.welcome-more>summary{display:flex;align-items:center;gap:.7rem;width:fit-content;max-width:100%;min-height:52px;list-style:none;font-size:1.125rem;font-weight:600;line-height:1.5;cursor:pointer;padding:.6rem .2rem;color:var(--sage)}
+.welcome-more>summary::-webkit-details-marker{display:none}
+.welcome-more>summary .expand-icon{font-family:var(--heading);font-size:1.5rem;line-height:1;flex:none}
+.welcome-more>summary .expand-label{text-decoration:underline;text-underline-offset:.25em}
+.welcome-more[open]>summary .expand-icon{transform:rotate(45deg)}
+.welcome-first-fallback{margin-top:0}
+.welcome-first-fallback>summary{color:var(--navy);font-family:var(--heading);font-weight:700}
+.welcome-guide-list{margin:1rem 0 0;padding:0;list-style:none;border-top:1px solid var(--line)}
+.welcome-guide-list li{margin:0;border-bottom:1px solid var(--line)}
+.welcome-guide-list a{display:grid;grid-template-columns:2.5rem minmax(0,1fr) 1.25rem;gap:.9rem;align-items:center;min-height:64px;padding:1.15rem .5rem;text-decoration:none;line-height:1.5;border-radius:5px}
+.welcome-guide-list a:hover{background:var(--sand)}
+.welcome-guide-number{font-family:var(--body);font-size:1.125rem;font-weight:600;color:var(--sage)}
+.welcome-guide-title{font-family:var(--heading);font-weight:700;font-size:1.125rem;overflow-wrap:anywhere}
+.welcome-guide-arrow{font-size:1.25rem;color:var(--sage)}
+.welcome-more .welcome-guide-list{background:var(--paper);padding:0 1rem;border:1px solid var(--line);border-radius:8px}
+.welcome-more .welcome-guide-list li:last-child{border-bottom:0}
+.welcome-note{font-size:1.0625rem;color:var(--sage);margin:1.5rem 0 0}
+.welcome-dialog{width:min(46rem,calc(100% - 2rem));max-height:85vh;max-height:85dvh;padding:0;border:1px solid var(--line);border-radius:14px;background:var(--paper);color:var(--navy);overflow:auto;overscroll-behavior:contain}
+.welcome-dialog::backdrop{background:rgba(20,33,61,.62)}
+.welcome-dialog-top{position:sticky;top:0;z-index:1;display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1.2rem 1.5rem;background:var(--paper);border-bottom:1px solid var(--line)}
+.welcome-dialog-top h2{font-size:1.35rem;line-height:1.4;margin:0}
+.welcome-dialog-close{min-width:5rem;min-height:52px;border:1px solid var(--navy);border-radius:8px;padding:.65rem 1rem;background:var(--paper);color:var(--navy);font:600 1.125rem/1.4 var(--body);cursor:pointer}
+.welcome-dialog-close:hover{background:var(--sand)}
+.welcome-dialog-content{padding:1rem 1.5rem 1.5rem}
+.welcome-dialog-content>p{font-size:1.125rem;line-height:1.5;margin:.3rem 0 1rem;color:var(--sage)}
+.welcome-dialog-content .welcome-guide-list{margin-top:0;border-top:0}
+.welcome-dialog-open{overflow:hidden}
+.welcome-page .site-footer{padding-block:1.5rem}
+@media(max-width:760px){.welcome-main{width:calc(100% - 2.5rem);padding:2.5rem 0 3rem}.welcome-start{grid-template-columns:1fr;gap:1.4rem;padding:1.6rem}.welcome-start .button{justify-self:start}.welcome-page .site-header nav{gap:.4rem 1rem}.welcome-intro{margin-bottom:1.7rem}}
+@media(max-width:440px){.welcome-page{font-size:1.25rem}.welcome-main{width:calc(100% - 2rem);padding-top:2rem}.welcome-intro h1{font-size:2.3rem}.welcome-start{padding:1.4rem}.welcome-start .button,.welcome-window-button{width:100%}.welcome-dialog{width:calc(100% - 1rem);max-height:92vh;max-height:92dvh}.welcome-dialog-top{padding:1rem}.welcome-dialog-content{padding:.75rem 1rem 1rem}.welcome-guide-list a{grid-template-columns:2rem minmax(0,1fr) 1rem;gap:.6rem;padding-block:1rem}.welcome-guide-title{font-size:1.0625rem}.welcome-more .welcome-guide-list{padding-inline:.75rem}}
