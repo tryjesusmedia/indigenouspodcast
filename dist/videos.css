@@ -1,0 +1,23 @@
+.video-invitation{background:var(--paper);border-top:1px solid var(--line)}
+.video-heading{max-width:46rem;margin-bottom:2rem}
+.video-heading h2{margin-bottom:1rem}
+.video-heading>p:last-child{margin-bottom:0}
+.video-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.5rem;list-style:none;margin:0;padding:0}
+.video-grid>li{min-width:0;display:flex}
+.video-card{display:flex;flex-direction:column;width:100%;background:var(--sand);border:1px solid var(--line);border-radius:10px;color:var(--navy);text-decoration:none}
+.video-card:hover{border-color:var(--sage)}
+.video-card:hover h3,.video-card:focus-visible h3{text-decoration:underline;text-underline-offset:.2em}
+.video-thumbnail{display:block;position:relative;aspect-ratio:16/9;background:var(--navy);border-radius:9px 9px 0 0;overflow:hidden}
+.video-thumbnail img{width:100%;height:100%;object-fit:contain}
+.video-duration{position:absolute;right:.65rem;bottom:.65rem;padding:.15rem .5rem;background:var(--navy);color:var(--sand);font:600 1rem/1.4 var(--body);border-radius:4px}
+.video-card-body{padding:1.4rem;display:flex;flex-direction:column;flex:1}
+.video-card h3{font-size:1.25rem;font-weight:700;line-height:1.45;letter-spacing:-.015em;margin:0 0 1.2rem;text-wrap:wrap}
+.video-card-action{margin-top:auto;color:var(--sage);font-size:1.0625rem;font-weight:600;line-height:1.5;text-decoration:underline;text-underline-offset:.2em}
+.video-actions{margin-top:2rem}
+.video-actions .button{font-size:1.0625rem;min-height:56px}
+.video-actions>p{font-size:1.0625rem;color:var(--sage);margin:1rem 0 0}
+.welcome-videos{margin-top:3rem;padding-top:3rem;border-top:1px solid var(--line)}
+.welcome-videos .video-card{background:var(--paper)}
+.welcome-videos .video-heading h2{font-size:clamp(1.8rem,3.5vw,2.6rem)}
+@media(max-width:900px){.video-grid{grid-template-columns:1fr;gap:1.25rem}.video-card{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);align-items:stretch}.video-thumbnail{height:100%;aspect-ratio:auto;min-height:12rem;border-radius:9px 0 0 9px}.video-card-body{padding:1.5rem}.video-card h3{font-size:1.25rem}}
+@media(max-width:540px){.video-card{display:flex}.video-thumbnail{height:auto;aspect-ratio:16/9;min-height:0;border-radius:9px 9px 0 0}.video-card-body{padding:1.3rem}.video-actions .button{width:100%}.welcome-videos{margin-top:2.5rem;padding-top:2.5rem}}
