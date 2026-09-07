@@ -11,3 +11,8 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
 
 @media(max-width:360px){.header-inner{flex-wrap:wrap}.site-header nav{flex:1;min-width:0}.hero-art{grid-template-columns:1fr}.hero-logo-surface{padding:1.75rem}.hero-note{padding:0 1.75rem 1.75rem}.hero-note>p{font-size:1.5rem}}
+
+/* Keep signup in the opening screen; the form follows the invitation on phones. */
+.hero{align-items:start}
+.hero>.signup-card{width:100%;min-width:0;align-self:start}
+.signup-grid>.hero-art{align-self:start}
