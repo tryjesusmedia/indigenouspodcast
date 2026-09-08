@@ -16,3 +16,6 @@
 .hero{align-items:start}
 .hero>.signup-card{width:100%;min-width:0;align-self:start}
 .signup-grid>.hero-art{align-self:start}
+
+/* Site credit */
+.footer-credit{margin:1rem auto 0;padding-inline:1rem;text-align:center;font-size:.9375rem;line-height:1.5}.footer-credit a{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:.5rem .25rem;color:inherit;text-underline-offset:.25em}
