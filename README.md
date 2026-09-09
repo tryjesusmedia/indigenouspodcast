@@ -31,3 +31,13 @@ The optional `wrangler.jsonc` also supports Cloudflare Workers static asset depl
 ## Files
 
 `dist/index.html` contains the full page; `dist/styles.css` contains responsive brand styling; `dist/main.js` manages Omnisend loading and updates the year. `.openai/hosting.json` identifies the private review Site.
+
+## Search metadata and verification
+
+The public site uses extensionless canonical URLs on `https://indigenouspodcast.org`. `dist/sitemap.xml` lists the homepage, guide library, and 30 lessons. The post-signup welcome page has `noindex, follow`; the custom `404.html` prevents missing URLs from returning a successful homepage response on Pages.
+
+Run `python scripts/build-seo.py` after updating the guide catalog. It maintains unique descriptions, social metadata using the existing logo, WebSite/Organization/CollectionPage/Article/BreadcrumbList structured data, related guide links, and the sitemap. No authors, publication dates, ratings, medical qualifications, or episode details are inferred. Preserve the factual catalog in that script when changing lesson topics.
+
+Run `python scripts/check-seo.py` before publication. It checks local links and anchors, unique titles/descriptions, canonical URLs, indexability, structured data, sitemap coverage, crawl paths from the homepage, and preservation of the original lesson sections.
+
+The original licensed fonts remain available; the pages use WOFF2 versions with the same glyph coverage and 68% fewer font bytes. Keep Cloudflare Pages' default caching and automatic extensionless redirects. Search Console verification and sitemap submission are separate account operations; no verification token is invented or embedded.
